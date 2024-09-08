@@ -35,11 +35,9 @@ onMounted(() => {
             length2: 10,
           },
           data: [
-            { value: 48, name: "上海" },
             { value: 42, name: "北京" },
-            { value: 38, name: "广东" },
-            { value: 25, name: "长沙" },
-            { value: 30, name: "武汉" },
+            { value: 38, name: "杭州" },
+            { value: 30, name: "青岛" },
           ],
         },
       ],

@@ -1,7 +1,7 @@
 <template>
   <div class="document">
     <iframe
-      src="https://juejin.cn/post/7380283122489081856"
+      src="https://github.com/lcy-24/learningRecord"
       frameborder="0"
     ></iframe>
   </div>

@@ -95,4 +95,28 @@
 
 
     }
+            /*
+        设置滚动条整体部分的样式
+        */
+            ::-webkit-scrollbar {
+              /* 滚动条整体的宽度及颜色 */
+              width: 2px;
+              background-color: #F1F1F1;
+            }
+      
+            /*
+        滚动外层样式
+        */
+            ::-webkit-scrollbar-track {
+              border-radius: 50%;
+              ;
+            }
+      
+            /*
+        滚动的滑块样式
+        */
+            ::-webkit-scrollbar-thumb {
+              border-radius: 50%;
+              background-color: #C1C1C1;
+            }
 }

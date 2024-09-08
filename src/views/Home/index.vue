@@ -11,16 +11,14 @@
                   :src="userStore.userinfo.avatar"
                   @error="() => true"
                 >
-                  <img
-                    src="https://cube.elemecdn.com/e/fd/0fc7d20532fdaf769a25683617711png.png"
-                  />
+                  <img src="@/assets/image/login/avatar.png" />
                 </el-avatar>
                 <div class="user_content">
                   <div class="tip">
                     Hello，{{ userStore.userinfo.username }}
                   </div>
                   <div class="content">
-                    今日天气晴朗，气温在15℃至25℃之间，美好的一天。
+                    {{ now }} 今日天气晴朗，气温在15℃至25℃之间，美好的一天。
                   </div>
                 </div>
               </div>
@@ -149,7 +147,7 @@
         </el-col>
         <el-col :xs="24" :sm="24" :md="24" :lg="9">
           <el-card>
-            <div class="tit">前端结业率</div>
+            <div class="tit">工作城市</div>
             <div class="pie">
               <component :is="chartComponent('pie')" />
             </div>
@@ -161,12 +159,14 @@
 </template>
 
 <script setup lang="ts">
+import moment from "moment"
 import { useUserStore } from "@/stores/modules/user"
 import { defineAsyncComponent } from "vue"
 import { useRouter } from "vue-router"
 import { basic } from "../../config/setting"
 const userStore = useUserStore()
 const router = useRouter()
+let now = moment().format("YYYY-MM-DD HH:mm:ss")
 const goVue = () => {
   window.open("https://cn.vuejs.org/guide/introduction.html")
 }
@@ -186,7 +186,7 @@ const goECharts = () => {
   window.open("https://echarts.apache.org/zh/index.html")
 }
 const goDocument = () => {
-  window.open("https://juejin.cn/post/7380283122489081856")
+  window.open("https://github.com/lcy-24/learningRecord")
 }
 // 异步加载图表
 const chartComponent = (val: string) => {

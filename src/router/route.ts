@@ -64,6 +64,45 @@ export const asyncRouter = [
     ],
   },
   {
+    path: "/learningSummary",
+    name: "learningSummary",
+    redirect: "/learningSummary/css",
+    meta: { title: "学习总结", icon: "Menu", isShow: true },
+    component: Layout,
+    children: [
+      {
+        path: "/learningSummary/css",
+        name: "css",
+        meta: { title: "CSS ", icon: "MoreFilled", isShow: true },
+        component: () => import("@/views/LearningSummary/css/index.vue"),
+      },
+      {
+        path: "/learningSummary/js",
+        name: "js",
+        meta: { title: "JS ", icon: "Monitor", isShow: true },
+        component: () => import("@/views/LearningSummary/js/index.vue"),
+      },
+      {
+        path: "/learningSummary/vue2",
+        name: "vue2",
+        meta: { title: "VUE2 ", icon: "Monitor", isShow: true },
+        component: () => import("@/views/LearningSummary/vue2/index.vue"),
+      },
+      {
+        path: "/learningSummary/vue3",
+        name: "vue3",
+        meta: { title: "VUE3 ", icon: "Monitor", isShow: true },
+        component: () => import("@/views/LearningSummary/vue3/index.vue"),
+      },
+      {
+        path: "/learningSummary/webpack",
+        name: "webpack",
+        meta: { title: "WEBPACK ", icon: "Monitor", isShow: true },
+        component: () => import("@/views/LearningSummary/webpack/index.vue"),
+      },
+    ],
+  },
+  {
     path: "/components",
     name: "components",
     redirect: "/components/pagination",
@@ -75,6 +114,12 @@ export const asyncRouter = [
         name: "pagination",
         meta: { title: "分页器 ", icon: "MoreFilled", isShow: true },
         component: () => import("@/views/Components/pagination/index.vue"),
+      },
+      {
+        path: "/components/tables",
+        name: "tables",
+        meta: { title: "table表格 ", icon: "MoreFilled", isShow: true },
+        component: () => import("@/views/Components/tables/index.vue"),
       },
       {
         path: "/components/edit",

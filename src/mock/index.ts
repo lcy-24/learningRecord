@@ -4,8 +4,7 @@ const userinfo = [
   {
     userId: 2,
     avatar:
-      "https://s1.aigei.com/prevfiles/a51818e3e5e84376bae80b10d2aa2ef8.gif?e=1735488000&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:8aJsLngoetNa2SoIsHVsmsccPPo=" ||
-      "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif",
+      "@/assets/image/login/avatar.png" || "@/assets/image/login/avatar.png",
     username: "admin",
     password: 123456,
     desc: "系统管理员",
@@ -14,9 +13,16 @@ const userinfo = [
     routes: [
       "document",
       "pagination",
+      "tables",
       "edit",
       "home",
       "components",
+      "learningSummary",
+      "css",
+      "js",
+      "vue2",
+      "vue3",
+      "webpack",
       "menu-one",
       "moremenu",
       "menu-two",

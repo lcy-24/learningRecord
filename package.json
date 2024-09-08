@@ -1,5 +1,5 @@
 {
-  "name": "xjy_admin",
+  "name": "learning_record",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -29,6 +29,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-vue": "^9.25.0",
     "lodash": "^4.17.21",
+    "moment": "^2.30.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",

@@ -3,7 +3,9 @@
     <!-- 刷新 -->
     <div class="refresh" @click="refresh" v-if="defaultSettings.isShowMenu">
       <div ref="refreshRef" class="refreshContent">
-        <el-icon size="16" color="gray"><Refresh /></el-icon>
+        <el-icon size="16" color="gray">
+          <Refresh />
+        </el-icon>
       </div>
     </div>
 
@@ -45,9 +47,7 @@
             :src="userStore.userinfo.avatar"
             @error="() => true"
           >
-            <img
-              src="https://cube.elemecdn.com/e/fd/0fc7d20532fdaf769a25683617711png.png"
-            />
+            <img src="@/assets/image/login/avatar.png" />
           </el-avatar>
           <div class="nickname">{{ userStore.userinfo.username }}</div>
         </div>
@@ -69,7 +69,9 @@
       placement="bottom"
     >
       <div class="set" @click="set" v-show="defaultSettings.isSet">
-        <el-icon size="16" color="gray"><Setting /></el-icon>
+        <el-icon size="16" color="gray">
+          <Setting />
+        </el-icon>
       </div>
     </el-tooltip>
     <!-- 设置 -->
@@ -116,7 +118,7 @@ const loginOut = async () => {
   })
 }
 const goUrl = () => {
-  window.open("https://gitee.com/dragon-xjy/xjy_admin")
+  window.open("https://github.com/lcy-24/learningRecord")
 }
 // 设置
 const drawerShow = ref(false)

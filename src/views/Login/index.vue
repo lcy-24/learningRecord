@@ -59,7 +59,7 @@
               </el-form-item>
             </el-form>
             <!-- 账号信息 -->
-            <div class="account_info">
+            <!-- <div class="account_info">
               <div class="admin">
                 <div class="tip text-5">管理员</div>
                 <view class="accountNum mt-2">
@@ -74,7 +74,7 @@
                   <text class="m-l-10">密码：123456</text>
                 </view>
               </div>
-            </div>
+            </div> -->
             <img
               class="bg3 rounded-xl"
               src="../../assets/image/login/bg3.png"
